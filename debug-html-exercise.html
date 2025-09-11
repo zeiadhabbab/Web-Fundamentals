@@ -1,0 +1,149 @@
+
+<!DOCTPE HTML>
+
+<html lang=en>
+<head>
+  <meta chraset="UTF-8">
+  <title>Debugging HTML Exercise
+
+  <lin rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <script type="text/javascript" scr="app.js"></script>
+  <style>
+    .card { borfer: 1px solid #ccc; padding: 12px; }
+    .hidden { display none }
+  </style>
+</head>
+
+<head>
+  <meta name="author" content="Web Fundamentals Team">
+</head>
+
+<body id="main">
+  <center>
+    <h1 style="colr:red">Welcome to the Debug Lab</h1>
+    <p>Today we fix markup & validate all the things! AT&T & Co.</p>
+  </center>
+
+  <body>
+    <nav id="main">
+      <a href=#overview target="_blnak">Overview</a>
+      <a href="page.html" aria-labl="Next page">Next</a>
+      <a>Missing HREF link</a>
+    </nav>
+
+    <section class="hero">
+      <img src="banner.jpg" alt=>
+      <p>
+        Please read the <div>instructions</div> carefully.
+      </p>
+      </section>
+
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>This page contains many different kinds of HTML issues.</p>
+
+      <article>
+        <h3>Common Problems</h3>
+        <ul>
+          <li>Invalid nesting
+          <li>Incorrect attributes
+          <li>Deprecated tags
+          <li>Accessibility problems
+          <li>Tables & forms mishaps</il>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Image Gallery</h3>
+        <figure>
+          <img src="cat.jpg">
+          <figcaption>Our mascot</figcaption>
+        </figure>
+        <figure>
+          <img src="dog.jpg" alt="A friendly dog">
+          <figcaption>Good boy</figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <h3>Data Table</h3>
+        <table border="1">
+          <caption>Team Roster</caption>
+          <tr>
+            <th>Name<th>Role<th>Email
+          </tr>
+          <tr>
+            <td>Rana</td><td>Lead</td><td><a href="mailto:rana@example.com">rana@example.com</a>
+          </tr>
+          <tr>
+            <td>Omar</td>
+            <td>Reviewer</td>
+            <th>omar@example.com</td>
+          </tr>
+        </table>
+      </article>
+
+      <article>
+        <h3>Form</h3>
+        <form action="submit" method="POST" novalidat>
+          <label for="full_name">Full Name</label>
+          <input id="name" type="text" placeholder=Full Name>
+
+          <label for="email">Email</label>
+          <input id="email" type="emali" name="email">
+
+          <label for="age">Age</label>
+          <input id="age" type="number" min="18" max="abc">
+
+          <label>
+            <input type="checkbox" id="agree" id="agree2"> I agree
+          </label>
+
+          <button onclick="return false>Submit</button>
+          <button type="submit" disabled="false">Really Submit</button>
+        </form>
+      </article>
+
+      <article>
+        <h3>ARIA & Semantics</h3>
+        <div role="buton" tabindex="0">Press Me</div>
+        <div aria-hidden="maybe">Hidden?</div>
+      </article>
+
+      <article>
+        <h3>Lists & Breaks</h3>
+        <ol start="zero">
+          <li>First</li>
+          <li>Second</li>
+        </ol>
+        </br>
+      </article>
+
+      <article>
+        <h3>Inline vs Block</h3>
+        <span>
+          <div class="card">Card inside a span (invalid block-in-inline)</div>
+        </span>
+      </article>
+
+      <!-- This comment is never closed
+      <section>
+        <p>More content that should be inside a closed comment.</p>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Debug Corp</p>
+        <font size="4">Fix me too!</font>
+      </footer>
+    </section>
+
+    </div>
+
+    <script>
+      const el = document.getElementById('main')
+      if (el) { el.classList.add('loaded')
+    </script>
+
+</body>
+</html>
