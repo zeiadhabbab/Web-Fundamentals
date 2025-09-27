@@ -24,4 +24,7 @@ Repository link: [https://github.com/zeiadhabbab/Web-Fundamentals.git](https://g
 5. Push your branch to GitHub.  
 6. Open a Pull Request (PR) to merge your branch into **main**.  
    - **PR Title:** `Add reflog: FIRSTNAME LASTNAME (STUDENTID)`  
-7. If you can, merge the PR. If not, just submit the PR link.  
+7. If you can, merge the PR. If not, just submit the PR link.
+
+8. Final Step: Submit the link of your file on moodle 
+ex: https://github.com/zeiadhabbab/Web-Fundamentals/blob/main/web_assignment_1/firstname_lastname_studentid.txt
