@@ -32,3 +32,25 @@ Repository link: [https://github.com/zeiadhabbab/Web-Fundamentals.git](https://g
 ex: https://github.com/zeiadhabbab/Web-Fundamentals/blob/firstname_lastname_studentid/web_assignment_1/firstname_lastname_studentid.txt
 
 ex: https://github.com/zeiadhabbab/Web-Fundamentals/blob/main/web_assignment_1/firstname_lastname_studentid.txt
+
+
+
+
+Grading – Git Assignment (5 Points)
+
+Local Repo Setup & Commit (1.5 point)
+
+	Correctly created web_assignment_1 folder as a Git repository. 0.5
+	Created index.txt with required content. 0.5
+	Made a clear and meaningful commit message. 0.5
+
+Reflog File Creation (1 point)
+
+	Ran git reflog. 0.5
+	Saved output into a correctly named file firstname_lastname_studentid.txt. 0.5
+
+GitHub Branch & Commit (2.5 point)
+
+	Created branch with correct format firstname_lastname_studentid. 1
+	Copied reflog file into web_assignment_1 folder. 0.5
+	Committed the file. 1
