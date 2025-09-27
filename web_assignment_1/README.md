@@ -26,5 +26,9 @@ Repository link: [https://github.com/zeiadhabbab/Web-Fundamentals.git](https://g
    - **PR Title:** `Add reflog: FIRSTNAME LASTNAME (STUDENTID)`  
 7. If you can, merge the PR. If not, just submit the PR link.
 
-8. Final Step: Submit the link of your file on moodle 
+8. Final Step: Submit the link of your file on moodle
+
+
+ex: https://github.com/zeiadhabbab/Web-Fundamentals/blob/firstname_lastname_studentid/web_assignment_1/firstname_lastname_studentid.txt
+
 ex: https://github.com/zeiadhabbab/Web-Fundamentals/blob/main/web_assignment_1/firstname_lastname_studentid.txt
