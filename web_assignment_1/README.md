@@ -3,7 +3,7 @@
 ## Part A – Local Git Work
 
 1. Create a folder called **web_assignment_1** and make it a Git repository.  
-2. Create a file **index.html** with:  
+2. Create a file **index.txt** with:  
    - First line: `Hello from Web Assignment 1`  
    - Second line: A paragraph with your **name** and **student ID**.  
 3. Add and commit the file with a clear commit message.  
