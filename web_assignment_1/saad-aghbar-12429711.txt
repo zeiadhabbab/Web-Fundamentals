@@ -1,0 +1,2 @@
+0231478 (HEAD -> main) HEAD@{0}: commit: added a index.txt to file
+29e385c (origin/main, origin/HEAD) HEAD@{1}: clone: from https://github.com/saad-aghbar/web_1_assignment_1.git
