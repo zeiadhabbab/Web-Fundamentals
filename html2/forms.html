@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="#" method="post">
+        <label for="user-name">User Name:</label>
+        <input type="text" id="name" name="user-name" required><br><br>
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="1" max="120"><br><br>
+        <br><br>
+        <label for="startdate">Start Date:</label>
+        <input type="date" id="startdate" name="startdate"><br><br>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="eg">Egypt</option>
+            <option value="sa">Saudi Arabia</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button type="reset">Reset Button</button> 
+    </form>
+</body>
+
+</html>
