@@ -1,0 +1,10 @@
+50b1f0a HEAD@{0}: commit: [CORE]: Add Index File for First Task
+73a789f HEAD@{1}: checkout: moving from main to ghaith_fouqhaa_12217983
+73a789f HEAD@{2}: commit: [CORE]: Add Sekelton Readme File
+1da921f HEAD@{3}: checkout: moving from ghaith_fouqhaa_12217983 to main
+488a419 HEAD@{4}: reset: moving to HEAD~1
+633f961 HEAD@{5}: commit: [CORE]: Add Sekelton Readme File
+488a419 HEAD@{6}: checkout: moving from main to ghaith_fouqhaa_12217983
+1da921f HEAD@{7}: checkout: moving from 1da921f9029ffd66ea9ad934bbc5b9187e681b17 to main
+1da921f HEAD@{8}: checkout: moving from ghaith_fouqhaa_12217983 to origin/main
+488a419 HEAD@{9}: commit (initial): [CORE]: Add index.txt for First Task
