@@ -1,0 +1,1 @@
+1c21ef6 (HEAD -> master) HEAD@{0}: commit (initial): first assignment
