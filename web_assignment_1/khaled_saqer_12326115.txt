@@ -1,0 +1,4 @@
+1473981 (HEAD -> khaled_saqer_12326115) HEAD@{0}: commit: add reflog file
+8786f31 (origin/khaled_saqer_12326115) HEAD@{1}: commit: add reflog khaled_saqer(12326115)
+1d3f873 (origin/main, origin/HEAD, main) HEAD@{2}: checkout: moving from main to khaled_saqer_12326115
+1d3f873 (origin/main, origin/HEAD, main) HEAD@{3}: clone: from https://github.com/zeiadhabbab/Web-Fundamentals.git
