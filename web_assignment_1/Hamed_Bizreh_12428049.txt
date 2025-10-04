@@ -1,0 +1,3 @@
+USER@DESKTOP-2JUVJSS MINGW64 ~/OneDrive/web_assignment_1 (master)
+$ git reflog
+273bc72 (HEAD -> master) HEAD@{0}: commit (initial): Adding index.txt
