@@ -1,3 +1,0 @@
-Msys@Yazan MINGW64 ~/OneDrive/Desktop/web_assignment_1 (master)
-$ git reflog
-ff8f67e (HEAD -> master) HEAD@{0}: commit (initial): Adding index
