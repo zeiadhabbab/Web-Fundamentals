@@ -1,0 +1,4 @@
+96c23f6 (HEAD -> master) HEAD@{0}: commit: add index.txt file
+12bc88c HEAD@{1}: commit: add waseem_ibraheem_12428270 file to web_assignment_1
+e7eaa49 HEAD@{2}: commit (initial): add index.txt file to web_assignment_1 folder
+
