@@ -1,1 +1,6 @@
-560050b (HEAD -> master) HEAD@{0}: commit (initial): first_assinment_1
+6de921d HEAD@{0}: commit: Update rayyan.shtyieh_12442221
+ca7dcc1 HEAD@{1}: checkout: moving from main to rayyan.shtyieh_12442221
+ca7dcc1 HEAD@{2}: checkout: moving from rayyan.shtyieh_12442221.txt.txt to main
+ca7dcc1 HEAD@{3}: checkout: moving from main to rayyan.shtyieh_12442221.txt.txt
+ca7dcc1 HEAD@{4}: commit: Create rayyan.shtyieh_12442221.txt.txt
+d919a8d HEAD@{5}: clone: from https://github.com/zeiadhabbab/Web-Fundamentals.git
