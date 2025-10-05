@@ -1,0 +1,2 @@
+a018b07 HEAD@{0}: commit: Add index.txt with name and student ID
+d5702ab HEAD@{1}: commit (initial): Add index.txt with name and ID
