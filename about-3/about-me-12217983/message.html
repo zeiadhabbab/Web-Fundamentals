@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input output </title>
+</head>
+
+<body>
+    <header>
+        <h1> Send Me A Message</h1>
+    </header>
+
+    <form action="" method="post">
+        <label for="name"> Your Name:</label>
+        <input type="text"> <br><br>
+        <label for="email"> Your Email:</label>
+        <input type="email"><br><br>
+        <label for="topic"> Topic:</label>
+        <select name="topic" id="topic">
+            <option value="">--Choose topic--</option>
+            <option value="topic 1">Topic 1</option>
+            <option value="topic 2">Topic 2</option>
+            <option value="topic 3">Topic 3</option>
+            <option value="topic 4">Topic 4</option>
+            <option value="topic 5">Topic 5</option>
+            <option value="topic 6">Topic 6</option>
+        </select><br><br>
+        <div>
+            <label for="gender"> Gender : </label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+        </div>
+        <p> MESSAGE : </p>
+        <label for="message"> </label>
+        <textarea id="message" name="message" rows="10" cols="40">
+Your Message ...
+</textarea><br>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
