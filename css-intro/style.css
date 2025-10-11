@@ -1,0 +1,11 @@
+h1{
+    margin-top: 10px;
+}
+
+#head1{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    color: brown;
+}

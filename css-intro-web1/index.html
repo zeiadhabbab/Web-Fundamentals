@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+
+
+        <style>
+            /* Internal CSS
+            this is just a comment
+            */
+            body {
+                background-color: lightgray;
+                
+            }
+            a {
+                color: red;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: blueviolet;
+                text-decoration: underline;
+            }
+
+            .heading {
+                color: blue;
+            }
+
+
+            #my-div {
+                border: 2px solid black;
+                padding: 10px;
+                margin-top: 20px;
+                color: #000000;
+
+
+            }
+
+            #my-div:hover{
+                font-weight: bold;
+                text-decoration: underline;
+                font-style: italic;
+            }
+
+            h1 {
+                font-family: "Rakkas", serif;
+                font-weight: 900;
+                font-size: 50px;
+                line-height: 120%;
+            }
+
+
+            .rakkas-regular {
+            font-family: "Rakkas", serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            input:focus{
+                border: blue 3px solid;
+            }
+
+            .my-list li:nth-child() {
+                font-size: 34px;
+            }
+
+            .my-list li:first-child {
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Inline CSS -->
+        <h1 style="color: green;">This heading This is a heading</h1>
+        <p style="font-size: 24px;">This is a paragraph</p>
+        <a href="#">This is a link</a>
+        <p class="heading rakkas-regular">This is a paragraph with a link <a href="#">Link</a></p>
+
+        <h1 class="heading">This is a heading</h1>
+
+        <h3 class="sub-title heading">
+            this is more class
+        </h3>
+
+        <input type="text" placeholder="Type here">
+
+        <div id="my-div">
+            some text and more
+        </div>
+        <ul class="my-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </body>
+</html>

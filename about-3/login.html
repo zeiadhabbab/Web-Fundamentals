@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>send me a massage</p>
+    <form action="abc.html" target="_self" method="POST">
+        <div>
+            <label>your name</lable>
+            <input autofocus type="text" name="u_name" required>
+        </div>
+        <div>
+            <label>your email</label>
+            <input type="email" name="u_email"required>
+        </div>
+        <div>
+            <label>topic</label>
+            <select name="frontend_language">
+                <option hidden selected> </option> 
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">J.S</option>
+            </select>
+        </div>
+        <div>
+            <label>gender</label>
+            <input type="radio" name="gender">
+            <label>male</label>
+            <input type="radio" name="gender">
+            <label>female</label>
+        </div>
+        <div>
+            <label>massage</label>
+            <br>
+            <textarea name="u_message" cols="50" rows="5" placeholder="your massage..." minlength="5" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <div>
+            <input type="reset" value="clear">
+        </div>
+    </form>
+</body>
+</html>
