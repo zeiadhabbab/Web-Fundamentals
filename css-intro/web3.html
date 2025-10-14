@@ -10,53 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS&display=swap" rel="stylesheet">
     <style>
-        .class1 {
-            font-size: 24px;
-            font-style: italic;
+        .banner {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 20px;
+            width: min(50%, 500px);
         }
-
-        .class2 {
-            font-size: 20px;
-            font-weight: bold;
-            color: blue;
-        }
-
-        /*
-        this is comments
-        */
-
-        .test-font {
-            font-family: "Playwrite DE SAS", cursive;
-            font-size: 15px;
-            font-weight: bolder;
-            color: purple;
-        }
-
-        .link{
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        .link:hover{
-            color: red;
-            text-decoration: underline;
-        }
-
-        input{
-            padding: 10px;
-            font-size: 16px;
-             border-radius: 5px;
-        }
-        input:focus{
-            border: 6px solid rgb(128, 0, 0);
-            outline: none;
-        }
-
-
-        .list li:first-child{
-            color: red;
-        }
-        
     </style>
 </head>
 
@@ -66,6 +27,22 @@
     </header>
     <!-- This is comment-->
     <section>
+
+        <div class="banner">
+            <h1>Web 3.0</h1>
+            <p>Welcome to the future of the internet!</p>
+        </div>
+
+        <div>
+            <span>Price: <span class="price">1000</span></span>
+        </div>
+
+        <div>
+            <p class="list-item">Decentralized applications (dApps)</p>
+            <p class="list-item">Smart contracts</p>
+            <p class="list-item">Enhanced data privacy and ownership for users</p>
+        </div>
+
         <p class="test-font">
             This is for testing font 
         </p>

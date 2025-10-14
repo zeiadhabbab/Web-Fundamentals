@@ -1,11 +1,86 @@
-h1{
+h1 {
     margin-top: 10px;
 }
 
-#head1{
+#head1 {
     background-color: lightgreen;
     text-align: center;
     font-size: 30px;
     padding: 10px;
     color: brown;
+}
+
+
+.class1 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.class2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+/*
+        this is comments
+        */
+
+.test-font {
+    font-family: "Playwrite DE SAS", cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    color: purple;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: green;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 6px solid rgb(128, 0, 0);
+    outline: none;
+}
+
+
+.list li:first-child {
+    color: red;
+}
+
+.list li:last-child {
+    color: green;
+}
+
+.list li:nth-child(2) {
+    color: blue;
+}
+
+.list li:nth-child(odd) {
+    /*color: orange;*/
+}
+
+.price::after {
+    content: " ★";
+    font-weight: bold;
+}
+
+.list-item::before {
+    content: "→ ";
+    color: green;
 }

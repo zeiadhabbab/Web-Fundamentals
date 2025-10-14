@@ -16,71 +16,26 @@
             /* Internal CSS
             this is just a comment
             */
-            body {
-                background-color: lightgray;
+
+            .box-model{
                 
+                padding: 20px;
+                margin: 20px;
+                border: 2px dotted red;
             }
-            a {
-                color: red;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: blueviolet;
-                text-decoration: underline;
-            }
-
-            .heading {
-                color: blue;
-            }
-
-
-            #my-div {
-                border: 2px solid black;
-                padding: 10px;
-                margin-top: 20px;
-                color: #000000;
-
-
-            }
-
-            #my-div:hover{
-                font-weight: bold;
-                text-decoration: underline;
-                font-style: italic;
-            }
-
-            h1 {
-                font-family: "Rakkas", serif;
-                font-weight: 900;
-                font-size: 50px;
-                line-height: 120%;
-            }
-
-
-            .rakkas-regular {
-            font-family: "Rakkas", serif;
-            font-weight: 400;
-            font-style: normal;
-            }
-
-            input:focus{
-                border: blue 3px solid;
-            }
-
-            .my-list li:nth-child() {
-                font-size: 34px;
-            }
-
-            .my-list li:first-child {
-                font-size: 20px;
-            }
-
+            
         </style>
     </head>
     <body>
+
+        <!-- box model -->
+        
+        <button class="btn">
+            View All
+        </button>
+
         <!-- Inline CSS -->
-        <h1 style="color: green;">This heading This is a heading</h1>
+        <h1 style="color: green;" class="add-after">This heading This is a heading</h1>
         <p style="font-size: 24px;">This is a paragraph</p>
         <a href="#">This is a link</a>
         <p class="heading rakkas-regular">This is a paragraph with a link <a href="#">Link</a></p>
@@ -90,17 +45,30 @@
         <h3 class="sub-title heading">
             this is more class
         </h3>
+        <h2 class="price">1500</h2>
 
+        <h5 class="add-after">
+            This is H5 Head
+        </h5>
+        
         <input type="text" placeholder="Type here">
-
         <div id="my-div">
             some text and more
         </div>
+        <div class="usemin">
+            This is the div with min
+        </div>
+
+        <div class="usemax">
+            This is the div with max
+        </div>
+
         <ul class="my-list">
             <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
         </ul>
+
+        <div class="box-model" style="margin: 10px;">
+            Content
+        </div>
     </body>
 </html>
