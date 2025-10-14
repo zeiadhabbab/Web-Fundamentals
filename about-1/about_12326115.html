@@ -2,15 +2,64 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-</head>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      header{
+        position: sticky;
+        top:0;
+        background-color: aqua;
+        z-index: 10;
+      }
+        #logo{
+            font-size: 12px;
+           border: 1px dashed black;
+           display: inline-block;
+           padding: 5px;
+              margin: 5px;
 
-<body>
+        }
+        .tagline{
+            font-size: 12px;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+        }
+        .menu {
+           list-style: none;
+        }
+       .menu li {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        .menu li a {
+            text-decoration: none;
+           font-weight: bold;
+           color: black;
+        }
+        .menu li:last-child a{
+            background-color: red;
+        }
+       .menu li :last-child
+       {
+        color:yellow;
+       }
+       
+   </style>
+
     <header>
-        <h1>Dr.Hasan Ali,MD</h1>
-        <p>Board-Certitied Internal Medicine Physician</p>
+        <h1 id="logo">Dr.Hasan Ali,MD</h1>
+        <p class="tagline">Board-Certitied Internal Medicine Physician</p>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="#about_12326115">about</a>
 
@@ -42,7 +91,7 @@
             adult medical conditions, including hypertension, diabetes, thyroid disorders, and preventive care. He
             practices evidence-based medicine and emphasizes effective communication and shared decision-making.</p>
         <pre>
-    <img src="images/doctor.jpg" alt="Hasan Ali" width="300px">
+    <img src="C:\Users\user\Web-Fundamentals\about_1\imges\doctor hasan.jpg" alt="Hasan Ali" width="300px">
     Dr.Ali at his clinic in Nablus
      </pre>
 
@@ -139,9 +188,8 @@
             <tfoot>
                 <tr>
                     <th>Friday & Saturday</th>
-                    <td colspan="3">(urgent cases via hospital on-call)</td>
+                    <td>Closed (urgent cases via hospital on-call)</td>
                 </tr>
-
             </tfoot>
         </table>
         <h3>Selected Publications</h3>
@@ -177,38 +225,9 @@
             <p>Phone:<a href="+970599000000">+970599000000</a></p>
             <p>Email:<a href="hasan.ali.md@example.com">hasan.ali.md@example.com</a></p>
         </address>
-        <p>send me a message</p>
-        <section>
-            <form action="" method="post">
-                <label>Your Name</label>
-                <input type="text" placeholder="Your Name" required>
-                <br><br>
-                <label>Your Email</label>
-                <input type="email" placeholder="Your Email" required>
-                <br><br>
-                <select name="pets" id="pet-select">
-                    
-                        <option value="">--Please choose an option--</option>
-                        <option value="pediatrics">pediatrics</option>
-                        <option value="internal medicine">internal medicine</option>
-                        <option value="dermatology">dermatology</option>
-                        <option value="gynecology">gynecology</option>
-                </select>
-                <br><br>
-                <label>Your Gender</label>
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female
-                <br><br>
-                <label>Your Message</label>
-                <textarea placeholder="Your Message" required></textarea>
-                <br><br>
-                <input type="submit" value="Submit">
-
-            </form>
-        </section>
         <p>For referrals,please include recent lab and imaging reports.Secure fax available upon request</p>
 
-        <img src="images/Najah.jpeg" alt="hospital al-najah" width="300px">
+        <img src="C:\Users\user\Web-Fundamentals\about_1\imges\download.jpeg" alt="hospital al-najah" width="300px">
         <br>
         Clinic entrance and reception
         <p>@ 2025 Dr.Hasan Ali __ Internal Medicine </p>
