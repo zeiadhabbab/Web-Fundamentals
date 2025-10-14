@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <title>
-        Lets know about the doctor
+        Dr. Ali Hasan
     </title>
+    <style>
+        
+        body{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        header{
+            
+            position: sticky;
+            top: 0;
+            background-color: rgb(0, 115, 255);
+            z-index: 10;
+            color: white;
+
+        }
+
+        #logo{
+            
+
+            padding: 10px;
+            font-size:  10;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid black;
+            display: inline;
+            margin: 5px;
+            padding-top: 0.2px;
+            padding-bottom: 0.2px;
+            background-color: black;
+
+
+        }
+
+        .tagline{
+            font-size: 25px;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            border: 2px  black
+
+        }
+        .menu{
+            list-style: none;
+
+        }
+
+        .menu li{
+
+            display: inline;    
+            border: 3px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color: white;
+
+        }
+
+
+        .menu li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+   
+        
+        .menu li:last-child a {
+            color: red;
+            
+        }
+    </style>
 
 </head>
-<meta charset="UTF-8">
 
 <body>
 
     <header>
-        <h1 id="logo"> Dr.Hasan Ali</h1>
-        <p>Welcome to this page</p>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                padding: 0px;
-                margin: 0px;
-                line-height: 1.6;
-            }
-
-            header {
-                text-align: center;
-                margin-bottom: 40px;
-                position : sticky;
-                top : 0;
-                background-color : rgb(135, 146, 208);
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 20px;
-                border : 1px solid black;
-
-            }
-
-            section {
-                margin-bottom: 40px;
-            }
-
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 15px;
-            }
-
-            table, th, td {
-                border: 1px solid black;
-            }
-
-            th, td {
-                padding: 10px;
-                text-align: left;
-            }
-
-            th {
-                background-color: #f2f2f2;
-            }
-            #logo {
-                font-size: 50px;
-                border : solid black;
-                display: inline-block;
-                padding : 10px;
-                 margin: 10px; 
-            }
-            .tagline {
-                font-style: oblique;
-                font-size: 23px;
-                display : inline-block;
-                padding :  10px;
-                margin: 10px;
-            }
-            .menu li a {
-                text-decoration : none;
-                color : black;
-                font-weight : bold;
-                padding : 5px;
-            }
-            .menu li:last-child {
-                color : red;
-                font-weight : bold;
-                background-color: black;
-            } 
-            .menu li:last-child a{
-                color : white;
-            }
-            .menu li:nth-child(-n +7) a{
-                background-color: black;
-                color : white;
-            }
-            </style>
-        <nav>
-            <ul class="menu">
+        <h1 id = logo> Dr. Hasan Ali </h1>
+        <p class ="tagline">Welcome To Dr. Hasan Ali Page Made By - ASE </p>
+        <nav> 
+            <ul class ="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#clinic-hours">Clinic Hours</a></li>
@@ -110,13 +97,13 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="about">
         <h2>About Dr.Hasan</h2>
         <p>Dr. Hasan Ali is a professional and caring doctor who specializes in internal medicine. He always aims to
             help his patients live healthier and happier lives.</p>
         <div>
-            <img src="download.jpg" alt="Dr photo" width="300" />
+            <img src="doctor.jpg" alt="Dr photo" width="300" />
         </div>
         <p>Dr.Hasan at his Clinic in Nablus</p>
         <h3>Clinical Interests</h3>
@@ -125,28 +112,6 @@
             <li>Internal Medicine</li>
             <li>Preventive Healthcare</li>
         </ul>
-    
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                padding: 0px;
-                line-height: 1.6;
-                margin: 0px;
-            }
-            head {
-                text-align: center;
-                margin-bottom: 40px;
-                background-color:rgb(236, 236, 236)
-            
-
-            }
-            img {
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                margin-top: 10px;
-            }
-            </style>
-        
 
     </section>
 
@@ -200,6 +165,7 @@
                 <td>13:00-16:00</td>
                 <td>New&follow-up</td>
                 <td>Fasting labs Available</td>
+                
             </tr>
             <tr>
                 <td><strong>Monday</strong></td>
@@ -231,10 +197,6 @@
                 <td>13:00-16:00</td>
                 <td>New&follow-up</td>
                 <td>General internal medicine</td>
-            </tr>
-            <tr>
-                <td><strong>Friday & Saturday</strong></td>
-                <td>Closed (urgent cases via Hospital on_call)</td> <td colspan="7"></td>
             </tr>
         </table>
     </section>
@@ -268,43 +230,65 @@
             Nablus
         </p>
 
-        <ul>
-            <li> <a href="#+970 9 234 5678"> Phone:+970 9 234 5678</a> </li>
+        <p>Phone: +970 9 234 5678
             <br>
-            <li> <a href="#hasanali@example.com"> Email:hasanali@example.com</a> </li>
-            <br>
-        </ul>
+            Email:hasanali@example.com
+        </p>
     </section>
 
-    <div>
-        <img src="thehos.jpg" alt="Map to Clinic" width="400" />
-        <p>Clinic entrance and reception</p>
-    </div>
+    <h1> Here To Send Me An Email: </h1>
+
+    <label> Your Name </label>
+    <input type="text" required>
     <br>
-    <section>
-        <form>
-            <h1>Send me a massege</h1><br>
-            <label for="yourname">your Name</label>
-            <input type="text" name="yourname" id="yourname" placeholder="ex:Abudallah"><br><br>
-            <label for="youremail">Your Email</label>
-            <input type="email" name="youremail" id="youremail" placeholder="user_name@gmail.com"> <br><br>
-            <label for="select">Select the reason of contact</label>
-            <select>
-                <option value="appointment">Appointment</option>
-                <option value="consultation">Consultation</option>
-                <option value="other">Other</option>
-                <option value="feedback">Feedback</option>
-            </select><br><br>
-            <label for="gander">Gander</label>
-            <select><option>Male</option><option>Female</option></select><br><br>
-            <label for="message">Your Message</label><br>
-            <textarea  placeholder="Your Message"></textarea><br><br>
-            <input type="submit" value="submit">
-</form>
-    </section>
+    <hr>
+
+    <label> Your Email </label>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <hr>
+
+    <label for="Topic">Topic:</label>
+
+    <select name="Caritificares" id="cars">
+        <option value="CE">CE</option>
+        <option value="CAP">CAP</option>
+        <option value="CS">CS</option>
+        <option value="IT">IT</option>
+
+
+    </select>
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <p> Your Message: </p>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    <br>
+    <button type="submit" id="x@gmail.com">Submit</button>
+
+
+    <section
+     <div>
+        <p>Clinic entrance and reception</p>
+        </div>
+        <br>
+        <footer>
+            <p> 2025 Dr. Hasan Ali.</p>
+            <p>last updated: January 2025</p>
+        </footer>
+</body>
+
+</html>
+
+
 
 
 
 </body>
 
 </html>
+

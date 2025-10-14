@@ -2,15 +2,64 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-</head>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+      header{
+        position: sticky;
+        top:0;
+        background-color: aqua;
+        z-index: 10;
+      }
+        #logo{
+            font-size: 12px;
+           border: 1px dashed black;
+           display: inline-block;
+           padding: 5px;
+              margin: 5px;
 
-<body>
+        }
+        .tagline{
+            font-size: 12px;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+        }
+        .menu {
+           list-style: none;
+        }
+       .menu li {
+            display: inline-block;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        .menu li a {
+            text-decoration: none;
+           font-weight: bold;
+           color: black;
+        }
+        .menu li:last-child a{
+            background-color: red;
+        }
+       .menu li :last-child
+       {
+        color:yellow;
+       }
+       
+   </style>
+
     <header>
-        <h1>Dr.Hasan Ali,MD</h1>
-        <p>Board-Certitied Internal Medicine Physician</p>
+        <h1 id="logo">Dr.Hasan Ali,MD</h1>
+        <p class="tagline">Board-Certitied Internal Medicine Physician</p>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="#about_12326115">about</a>
 
