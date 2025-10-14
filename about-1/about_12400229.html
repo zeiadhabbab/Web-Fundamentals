@@ -12,10 +12,93 @@
 <body>
 
     <header>
-        <h1>Dr.Hasan Ali</h1>
+        <h1 id="logo"> Dr.Hasan Ali</h1>
         <p>Welcome to this page</p>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 0px;
+                margin: 0px;
+                line-height: 1.6;
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 40px;
+                position : sticky;
+                top : 0;
+                background-color : rgb(135, 146, 208);
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+                border : 1px solid black;
+
+            }
+
+            section {
+                margin-bottom: 40px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+            #logo {
+                font-size: 50px;
+                border : solid black;
+                display: inline-block;
+                padding : 10px;
+                 margin: 10px; 
+            }
+            .tagline {
+                font-style: oblique;
+                font-size: 23px;
+                display : inline-block;
+                padding :  10px;
+                margin: 10px;
+            }
+            .menu li a {
+                text-decoration : none;
+                color : black;
+                font-weight : bold;
+                padding : 5px;
+            }
+            .menu li:last-child {
+                color : red;
+                font-weight : bold;
+                background-color: black;
+            } 
+            .menu li:last-child a{
+                color : white;
+            }
+            .menu li:nth-child(-n +7) a{
+                background-color: black;
+                color : white;
+            }
+            </style>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#clinic-hours">Clinic Hours</a></li>
@@ -27,6 +110,7 @@
             </ul>
         </nav>
     </header>
+    
     <section id="about">
         <h2>About Dr.Hasan</h2>
         <p>Dr. Hasan Ali is a professional and caring doctor who specializes in internal medicine. He always aims to
@@ -41,6 +125,28 @@
             <li>Internal Medicine</li>
             <li>Preventive Healthcare</li>
         </ul>
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 0px;
+                line-height: 1.6;
+                margin: 0px;
+            }
+            head {
+                text-align: center;
+                margin-bottom: 40px;
+                background-color:rgb(236, 236, 236)
+            
+
+            }
+            img {
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 10px;
+            }
+            </style>
+        
 
     </section>
 
@@ -128,8 +234,7 @@
             </tr>
             <tr>
                 <td><strong>Friday & Saturday</strong></td>
-                <td>Closed (urgent cases via Hospital on_call) <colspan="10"></colspan>
-                </td>
+                <td>Closed (urgent cases via Hospital on_call)</td> <td colspan="7"></td>
             </tr>
         </table>
     </section>
