@@ -1,0 +1,133 @@
+body {
+    background-color: lightgray;
+
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.heading {
+    color: blue;
+}
+
+
+#my-div {
+    border: 2px solid black;
+    padding: 10px;
+    width: clac(100% - 20px);
+    margin-top: 20px;
+    background-color: rgb(98, 230, 5);
+}
+
+
+#my-div {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    color: #000000;
+
+
+}
+
+#my-div:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+h1 {
+    font-family: "Rakkas", serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+
+.rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input:focus {
+    border: blue 3px solid;
+}
+
+.my-list li:nth-child() {
+    font-size: 34px;
+}
+
+.my-list li:first-child {
+    font-size: 20px;
+}
+
+.add-after {
+    font-size: 30px;
+}
+
+.add-after::after {
+    content: "'";
+}
+
+.add-after::before {
+    content: "'";
+}
+
+.price::after {
+    content: " $";
+
+}
+
+.usemin {
+    min-height: 40;
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: white;
+    width: min(50%, 300px);
+}
+
+.usemax {
+    min-height: 40;
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: white;
+    width: max(50%, 300px);
+}
+
+.btn {
+    /* Button */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 12px;
+
+    width: 125px;
+    height: 60px;
+
+    /* Base/White */
+    background: #FFFFFF;
+    /* Gray/300 */
+    border: 1px solid #363b42;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+}
