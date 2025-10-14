@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abrar\\OneDrive - stu.najah.edu\\Subjects\\Web1\\Projects\\Web-Fundamentals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abrar\\OneDrive - stu.najah.edu\\Subjects\\Web1\\Projects\\Web-Fundamentals\\about-1\\about_12401473.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about-1\\about_12401473.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "about_12401473.html",
+              "DocumentMoniker": "C:\\Users\\Abrar\\OneDrive - stu.najah.edu\\Subjects\\Web1\\Projects\\Web-Fundamentals\\about-1\\about_12401473.html",
+              "RelativeDocumentMoniker": "about-1\\about_12401473.html",
+              "ToolTip": "C:\\Users\\Abrar\\OneDrive - stu.najah.edu\\Subjects\\Web1\\Projects\\Web-Fundamentals\\about-1\\about_12401473.html",
+              "RelativeToolTip": "about-1\\about_12401473.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-07T05:29:04.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
