@@ -1,0 +1,40 @@
+body{
+margin: 0;
+padding: 0;
+}
+#header{
+color: rgb(40, 8, 220);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+background-color: aqua;
+}
+#logo{
+  display: inline-block;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    padding: 1px;
+    border: 2px solid black;
+}
+.tagline{
+
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin: 5px;
+    display: inline-block;
+}
+.menu ul{
+list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 5px;
+border: 1px solid black;
+padding: 3px;
+} 
+.menu ul li:last-child{
+    background-color: red;
+}
