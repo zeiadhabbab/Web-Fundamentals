@@ -1,0 +1,2 @@
+3404881 (HEAD -> master) HEAD@{0}: commit (initial): add file with my name and i
+d (index.txt)
