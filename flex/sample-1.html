@@ -6,7 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Product Page with Menu, About Section and Footer Links</title>
     <style>
-        
+        body {
+            margin:0;
+            padding:0;
+            background-color: rgb(176, 176, 175);
+        }
+
+        header {
+            background-color: #292828;
+            color: white;
+            font-size : 18px;
+            padding: 15px;
+            text-align: center;
+        }
+        nav#footer-nav {
+            background-color: #545855;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav#footer-nav a {
+            color: rgb(187, 181, 181);
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        #header-nav a:hover {
+            background-color: #857878;
+            font-weight: bold;
+            
+        }
+        .box {
+            background-color: white;
+            border: 1px solid #827979;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        main {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            align-items: stretch;
+            justify-content: center;
+           
+        }
+        .box-img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #292828;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        footer nav a {
+            color: rgb(214, 210, 210);
+            padding: 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .price {
+            font-size: 22px;
+            color: #25c228;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #292828;
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /*for mobile */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+
     </style>
 </head>
 
@@ -15,7 +115,7 @@
         <h1>Simple Flex Product Page</h1>
     </header>
 
-    <nav>
+    <nav id="footer-nav">
         <a href="#home">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
@@ -24,14 +124,14 @@
 
     <main>
         <section class="box">
-            <img src="https://placehold.co/400x300" alt="Sample Product">
+            <img class="box-img"  src="https://placehold.co/400x300" alt="Sample Product">
         </section>
 
         <section class="product-info box">
             <h2>Minimal Chair</h2>
             <p>Comfortable, modern, and lightweight chair perfect for any space.</p>
             <p class="price">$79.99</p>
-            <button>Add to Cart</button>
+            <button  class="btn" id="btn">Add to Cart</button>
         </section>
 
     </main>
