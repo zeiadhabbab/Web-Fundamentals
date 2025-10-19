@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Product Page with Menu, About Section and Footer Links</title>
-    <style>
-        
-    </style>
+   
 </head>
 
 <body>
@@ -15,7 +13,7 @@
         <h1>Simple Flex Product Page</h1>
     </header>
 
-    <nav>
+    <nav id="header-nav">
         <a href="#home">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
@@ -24,14 +22,14 @@
 
     <main>
         <section class="box">
-            <img src="https://placehold.co/400x300" alt="Sample Product">
+            <img class="box-img" src="https://placehold.co/400x300" alt="Sample Product">
         </section>
 
         <section class="product-info box">
             <h2>Minimal Chair</h2>
             <p>Comfortable, modern, and lightweight chair perfect for any space.</p>
             <p class="price">$79.99</p>
-            <button>Add to Cart</button>
+            <button class="btn">Add to Cart</button>
         </section>
 
     </main>
@@ -56,7 +54,7 @@
 
 
     <footer>
-        <nav>
+        <nav id="footer-nav">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>
             <a href="#faq">FAQ</a>
