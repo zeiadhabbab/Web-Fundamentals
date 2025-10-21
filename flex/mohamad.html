@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Product Page with Menu, About Section and Footer Links</title>
+    <style>
+body{
+    margin: 0;
+    padding:0;
+    background-color:rgb(181, 181, 181) ;
+} 
+header{
+    background-color:rgb(41, 41, 41);
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
+
+#header-nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(70, 70, 70);
+    justify-content: center;
+
+}
+ 
+ ##header-nav a{
+    color:white;
+    flex-direction: 18px;
+    padding: 15px;
+    text-decoration: center;
+
+
+ }
+</style>
+  </head>
+
+ <body>
+    <header>
+      <h1>Simple Flex Product Page</h1>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="box">
+        <img src="https://placehold.co/400x300" alt="Sample Product" />
+      </section>
+
+      <section class="product-info box">
+        <h2>Minimal Chair</h2>
+        <p>Comfortable, modern, and lightweight chair perfect for any space.</p>
+        <p class="price">$79.99</p>
+        <button>Add to Cart</button>
+      </section>
+    </main>
+
+    <main>
+      <section class="about box" id="about">
+        <h2>About Flex Store</h2>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+      </section>
+    </main>
+
+
+    <footer>
+      <nav>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+      </nav>
+      <p>&copy; 2025 Flex Store</p>
+    </footer>
+  </body>

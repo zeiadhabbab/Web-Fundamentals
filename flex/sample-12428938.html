@@ -4,7 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Product Page with Menu, About Section and Footer Links</title>
-    <style></style>
+    <style>
+        header
+        {
+    background-color: black;
+            color:aliceblue;
+            padding: 10px;
+            font-size: small;
+            display: flex;
+            justify-content: center;
+
+        }
+        nav
+        {
+            background-color: rgb(53,52,52);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        nav a
+        {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+        body{
+            background-color: rgb(187, 183, 183);
+            margin: auto;
+            padding: 15px;
+        }
+        .box
+        {
+            width: 400;
+            height: 300;
+            background-color: aliceblue;
+            padding: 15px;
+            margin-top: 10px;
+            border: solid black 1px;
+            border-radius: 10px;
+        }
+       .product-info box
+       {
+        width:400;
+        height: 300;
+        background-color: aliceblue;
+        padding: 15px;
+        margin-top: 10px;
+        border: solid black 1px;
+        border-radius: 10px;
+       }
+       .price
+       {
+        color: darkgreen;
+        font-size: 25px;
+       }
+main{
+    flex-direction: row;
+    display: flex;
+}
+    </style>
   </head>
 
   <body>
@@ -12,7 +72,7 @@
       <h1>Simple Flex Product Page</h1>
     </header>
 
-    <nav>
+    <nav class >
       <a href="#home">Home</a>
       <a href="#products">Products</a>
       <a href="#about">About</a>
@@ -64,7 +124,7 @@
 
 
     <footer>
-      <nav>
+      <nav class="box1">
         <a href="#privacy">Privacy Policy</a>
         <a href="#terms">Terms of Service</a>
         <a href="#faq">FAQ</a>
