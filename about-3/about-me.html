@@ -4,17 +4,75 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me</title>
+        <style>
+
+            body{
+                margin: 0;
+                padding:0;
+            }
+            #header{
+                background-color: aqua;
+                position: sticky;
+                top: 0;
+                z-index: 100;;
+            }
+            #logo{
+                margin: 5px;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                color: #1300e5;
+                padding: 1px;
+                border: 2px solid #1300e5;
+            }
+            .tagline{
+                font-size: 12px;
+                font-style: italic;
+                color: #000000;
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .menu ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+            }
+
+            .menu ul li{
+                margin: 5px;
+                border: 1px solid #000000;
+                padding: 3px;
+            }
+
+            .menu ul li a{
+                text-decoration: none;
+                color: #000000;
+            }
+
+            .menu ul li:last-child{
+                background-color: red;
+            }
+
+            .menu ul li:last-child a{
+                color: #fff;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <h1>Dr. Hasan Ali, MD</h1>
-            <p>Dr. Hasan Ali, MD, is a renowned cardiologist with over 20 years of experience in the field. He has a passion for helping his patients live healthier lives.</p>
-            <nav>
+        <header id="header">
+            <h1 id="logo">Dr. Hasan Ali, MD</h1>
+            <p class="tagline">
+                over 20 years of experience
+            </p>
+            <nav class="menu">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education & Certifecations </a></li>
                     <li><a href="#clincal-experience">Clinical Experience</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
