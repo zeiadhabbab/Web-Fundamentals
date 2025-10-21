@@ -4,17 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+   <style>
+    
+    body{
+    
+        padding :0px;
+        margin:0px;
+    }
+    header{
+        top: 0px;
+        background-color: rgb(91, 161, 161);
+        z-index:10 ;
+    
+    #logo{
+        font-size: 23px;
+        border : 1px dashed black ;
+        display : inline-block ;
+        padding : 10px ;
+        margin : 10px ;
+
+    }
+    .tagline {
+        font-size: 12px;
+        display : inline-block ;
+        padding : 5px ;
+        margin : 5px ;
+        
+      
+    }
+    .menu{
+        list-style:none;
+
+
+    }
+
+    .menu li {
+        
+        border : 1px dashed black ;
+        display : inline-block ;
+        padding : 5px ;
+        margin : 5px ;
+    }
+    .menu li a{
+        text-decoration: none ;
+        font-wedight : bold ;
+        color : rgb(12, 8, 8) ;
+    }
+     .menu li:last-child {
+       background-color: rgb(198, 67, 67);
+     
+       
+    }
+   
+    }
+
+
+
+
+</style>
 
 <body>
 <header>
-    <h1> Dr. Hasan Ali, MD </h1>
-    <p>
-        Board-Certitied Internal Medicen and physician 
-    </p>
+    <h1 id= "logo"> Dr. Hasan Ali, MD </h1>
+    <p class="tagline" Board-Certitied Internal Medicen and physician ></p>
+   
 
     <nav>
-        <ul>
+        <ul class="menu">
+
             <li><a href="#about-me">About</a></li>
             <li><a href="#education">Education & Certification</a></li>
             <li><a href="#Experience">Clinical Experience</a></li>
@@ -133,6 +193,9 @@
             <td>Closed</td>
             <td>Closed</td>
         </tr>
+
+
+           
     </table>
 </section>
 
