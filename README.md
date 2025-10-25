@@ -14,5 +14,5 @@
  - <a href="https://yoksel.github.io/flex-cheatsheet/">Flexbox Cheatsheet</a>
 
 ## JAVASCRIPT
--- <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript</a>
--- <a href="https://javascript.info/">Javascript.info</a>
+- <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript</a>
+- <a href="https://javascript.info/">Javascript.info</a>
