@@ -17,7 +17,3 @@
 - <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript</a>
 - <a href="https://javascript.info/">Javascript.info</a>
 
-
-web1#1 : https://najah.zoom.us/j/95107749076?pwd=MNn8Ben3umDdP77ZxRsTfoedLKd7Vm.1					995406	
-web1#3 : https://najah.zoom.us/j/95213440616?pwd=JRmQRbfmZua5ssHUhi8YbNb1RBc2Hr.1						
-						
