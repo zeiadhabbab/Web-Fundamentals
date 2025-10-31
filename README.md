@@ -13,5 +13,7 @@
  - <a href="https://www.freecodecamp.org/news/an-animated-guide-to-flexbox-d280cf6afc35">An Animated Guide to Flexbox | FreeCodeCamp</a>
  - <a href="https://yoksel.github.io/flex-cheatsheet/">Flexbox Cheatsheet</a>
 
-##
+## JAVASCRIPT
+- <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript</a>
+- <a href="https://javascript.info/">Javascript.info</a>
 
