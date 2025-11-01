@@ -16,4 +16,5 @@
 ## JAVASCRIPT
 - <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript</a>
 - <a href="https://javascript.info/">Javascript.info</a>
+- <a href="https://zeiadhabbab.github.io/JavaScript-Fundamentals/#json">JavaScript-Fundamentals Slides</a>
 
