@@ -1,0 +1,84 @@
+<html>
+<body name="mybody">
+
+  <style>
+    .btn {
+      font-size: 16px;
+      padding: 8px 12px;
+      margin: 4px;
+      background-color: green;
+    }
+
+    .btnred {
+      font-size: 16px;
+      padding: 8px 12px;
+      margin: 4px;
+      background-color: red;
+    }
+
+
+  </style>
+  
+  <div id="content"> This is sample <b>content</b></div>
+
+  Password: <input type="password" id="pwd" value="mypassword">
+
+  <input type="button" id="showhide" value="Show" class="btn">
+
+  <br>
+
+  <a href=""> This is a link</a>
+
+  <script>
+
+    let contentDiv = document.getElementById("content");
+    contentDiv.style.backgroundColor = "aquamarine";
+    contentDiv.style.borderStyle = "solid";
+     contentDiv.style.borderWidth = "1px";
+     contentDiv.style.borderColor = "red";
+     contentDiv.style.padding = "10px"; 
+
+    let pwdInput = document.getElementById("pwd");
+    let showhideBtn = document.getElementById("showhide");
+
+
+    showhideBtn.classList.add("btn");
+ 
+    showhideBtn.addEventListener("click", togglePassword);
+
+    let w = 1;
+    
+    function togglePassword(e) {
+      console.log(event.clientX, event.clientY);
+      
+      if(pwdInput.getAttribute("type") === "password") {
+        pwdInput.setAttribute("type", "text");
+        showhideBtn.classList.toggle("btn");
+        showhideBtn.classList.toggle("btnred");
+
+      } else {
+        pwdInput.setAttribute("type", "password");
+        showhideBtn.classList.toggle("btnred");
+        showhideBtn.classList.toggle("btn");
+      }
+
+    }
+     
+
+   
+    
+    setTimeout(function() {
+      let link = document.querySelector("a");
+      link.setAttribute("href", "https://www.example.com");
+    }, 3000);
+
+
+    let h2 = document.createElement("h2");
+    h2.textContent = "Dynamically Added Heading";
+
+     
+     
+
+  </script>
+</body>
+</html>
