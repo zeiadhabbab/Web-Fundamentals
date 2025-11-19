@@ -4,4 +4,3 @@
 - add event listener to the button
 - store latest fetch to local storge 
 */
-

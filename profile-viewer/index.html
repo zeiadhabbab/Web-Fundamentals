@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Profile Viewer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <main class="container">
     <h1>🔍 GitHub Profile Viewer</h1>
     <form id="search-form">
-        <input type="text" id="username" 
+        <input type="text" id="username" name="username"
         placeholder="Enter GitHub username..." 
         value="zeiadhabbab" required />
         <button type="submit" class="btn">Fetch Profile</button>
@@ -19,5 +19,6 @@
 
     <div id="profile" class="profile-card"></div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
