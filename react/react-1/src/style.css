@@ -1,0 +1,11 @@
+.header-title {
+    font-size: 34px;
+    font-weight: bold;
+    color: red;
+}
+
+.desc-title {
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
