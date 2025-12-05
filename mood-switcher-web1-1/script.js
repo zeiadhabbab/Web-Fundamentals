@@ -1,7 +1,12 @@
 const moods = [
     { text: "Calm", emoji: "☺️", color: "lightblue" },
     { text: "excited", emoji: "🤩", color: "yellow" },
-    { text: "Angry", emoji: "😡", color: "red" }
+    { text: "Angry", emoji: "😡", color: "red"} ,
+    { text: "Sad", emoji: "😭", color: "grey" },
+    { text: "Hot", emoji: "🥵", color: "orange" },
+    { text: "Cold", emoji: "🥶", color: "cyan" },
+    { text: "Cool", emoji: "😎", color: "green" }
+
 ]
 
 let index = 0;
