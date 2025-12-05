@@ -1,0 +1,17 @@
+.title-class{
+    font-size: 50px;
+    color:red
+}
+
+
+.description-class{
+    font-size: 20px;
+    color:blue
+}
+
+
+.class-tag{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}

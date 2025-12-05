@@ -18,3 +18,6 @@
 - <a href="https://javascript.info/">Javascript.info</a>
 - <a href="https://zeiadhabbab.github.io/JavaScript-Fundamentals/#json">JavaScript-Fundamentals Slides</a>
 
+
+##Teams
+<a href="https://docs.google.com/spreadsheets/d/1fWgKgcku1QaP8Exzpqos1TyAoCBd9AD6HrlZOhhaljI/edit?usp=sharing">Teams Sheets</a>
