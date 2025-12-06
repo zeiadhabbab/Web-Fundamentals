@@ -1,12 +1,14 @@
+import type { Dispatch, SetStateAction } from "react"
 import type { Task } from "../types"
 import TaskItem from "./TaskItem"
 
 
 type TaskListProps = {
-  tasks: Task[]
+  tasks: Task[],
+  setTasksList: Dispatch<SetStateAction<Task[]>>
 }
 
-const TasksList = ({tasks}: TaskListProps) => {
+const TasksList = ({tasks, setTasksList}: TaskListProps) => {
 
   return (
     <section className="panel">
@@ -17,8 +19,10 @@ const TasksList = ({tasks}: TaskListProps) => {
 
       <ul className="task-list">
 
+
+
         {tasks.map((task) => (
-          <TaskItem key={task.task} task={task.task} notes={task.notes} isCompleted={task.isCompleted} />
+          <TaskItem  task={task.task} notes={task.notes} isCompleted={task.isCompleted} id={task.id} tasks={tasks} setTasksList={setTasksList} />
         ))}
 
       </ul>

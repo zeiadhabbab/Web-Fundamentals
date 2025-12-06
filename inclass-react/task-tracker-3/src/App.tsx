@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import AddForm from './components/AddForm'
 import Header from './components/Header'
@@ -5,11 +6,13 @@ import SearchForm from './components/searchForm'
 import TasksList from './components/TasksList'
 import ToggleBtn from './components/ToggleBtn'
 import { tasksData } from './data'
+import type { Task } from './types'
 
 
 
 function App() {
 
+  const [tasksList, setTasksList] = useState<Task[]>(tasksData);
   const title = "Task Tracker";
   return (
     <div className="app">
@@ -19,18 +22,18 @@ function App() {
            <p className="app-subtitle">Simple UI for practicing converting HTML to React components.</p>
         </div>
         <div className="summary-chip">
-            3 tasks today • 1 completed
+            {tasksList.length} tasks today • {tasksList.filter((item) => item.isCompleted).length} completed
         </div>
       </Header>
 
       <div className="toolbar">
         <ToggleBtn />
 
-        <SearchForm />
+        <SearchForm tasks={tasksList} oldTasks={tasksData} setTasksList={setTasksList} />
       </div>
 
       <div className="content">
-        <TasksList tasks={tasksData} />
+        <TasksList tasks={tasksList} />
 
         <aside className="panel">
           <div className="panel-header">
@@ -38,7 +41,7 @@ function App() {
             <span className="panel-meta">Form only UI, no logic</span>
           </div>
 
-          <AddForm tasks={tasksData} />
+          <AddForm tasks={tasksList} setTasksList={setTasksList} />
         </aside>
       </div>
     </div>
