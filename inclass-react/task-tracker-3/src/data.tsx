@@ -1,4 +1,6 @@
-export let TasksData = [
+import type { Task } from "./types";
+
+export const tasksData: Task[] = [
     {
         task: "Review React homework",
         notes: "Review React homework",

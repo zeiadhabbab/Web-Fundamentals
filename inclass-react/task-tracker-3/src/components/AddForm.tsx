@@ -1,4 +1,27 @@
-const AddForm = () => {
+import type { Task } from "../types";
+
+
+type AddFormProps = {
+  tasks: Task[]
+}
+
+
+const AddForm = ({tasks}: AddFormProps) => {
+
+
+    const handleAddNew = () => {
+        console.log("Clear form");
+
+        tasks.push({
+            task: "New Task",
+            notes: "New Task Notes",
+            isCompleted: false
+        });
+
+        console.log(tasks.length);
+    }
+
+
     return (
         <form className="form">
             <div className="form-row">
@@ -23,7 +46,7 @@ const AddForm = () => {
 
             <div className="form-footer">
                 <button type="button" className="btn btn-secondary">Clear</button>
-                <button type="button" className="btn btn-primary">Save task</button>
+                <button type="button" className="btn btn-primary" onClick={handleAddNew} >Save task</button>
             </div>
         </form>
     )

@@ -4,6 +4,9 @@ import Header from './components/Header'
 import SearchForm from './components/searchForm'
 import TasksList from './components/TasksList'
 import ToggleBtn from './components/ToggleBtn'
+import { tasksData } from './data'
+
+
 
 function App() {
 
@@ -27,7 +30,7 @@ function App() {
       </div>
 
       <div className="content">
-        <TasksList />
+        <TasksList tasks={tasksData} />
 
         <aside className="panel">
           <div className="panel-header">
@@ -35,7 +38,7 @@ function App() {
             <span className="panel-meta">Form only UI, no logic</span>
           </div>
 
-          <AddForm />
+          <AddForm tasks={tasksData} />
         </aside>
       </div>
     </div>
