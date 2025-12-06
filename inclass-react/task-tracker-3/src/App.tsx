@@ -33,7 +33,7 @@ function App() {
       </div>
 
       <div className="content">
-        <TasksList tasks={tasksList} />
+        <TasksList tasks={tasksList} setTasksList={setTasksList} />
 
         <aside className="panel">
           <div className="panel-header">

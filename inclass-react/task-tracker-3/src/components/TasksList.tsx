@@ -18,13 +18,9 @@ const TasksList = ({tasks, setTasksList}: TaskListProps) => {
       </div>
 
       <ul className="task-list">
-
-
-
         {tasks.map((task) => (
-          <TaskItem  task={task.task} notes={task.notes} isCompleted={task.isCompleted} id={task.id} tasks={tasks} setTasksList={setTasksList} />
+          <TaskItem task={task.task} notes={task.notes} isCompleted={task.isCompleted} id={task.id} tasks={tasks} setTasksList={setTasksList} />
         ))}
-
       </ul>
     </section>
   )

@@ -18,7 +18,7 @@ const TaskItem = ({task, notes, isCompleted, id, tasks, setTasksList}: TaskItemT
 
 
     return (
-        <li className="task-item" >
+        <li className="task-item" key={id + ''} >
             <input id={id + ''} type="checkbox" onChange={toggleCheck} className="task-checkbox" checked={isCompleted} />
             <div className="task-main">
                 <div className="task-title">{task}</div>
