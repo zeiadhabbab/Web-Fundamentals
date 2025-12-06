@@ -7,6 +7,8 @@ export type TaskItemType = {
     id: number,
     tasks: Task[]
     setTasksList: Dispatch<SetStateAction<Task[]>>
+    allTasks: Task[]
+    setAllTasks: Dispatch<SetStateAction<Task[]>>
 }
 
 

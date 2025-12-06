@@ -12,6 +12,7 @@ import type { Task } from './types'
 
 function App() {
 
+  const [allTasks, setAllTasks] = useState<Task[]>(tasksData);
   const [tasksList, setTasksList] = useState<Task[]>(tasksData);
   const title = "Task Tracker";
   return (
@@ -27,13 +28,13 @@ function App() {
       </Header>
 
       <div className="toolbar">
-        <ToggleBtn />
+        <ToggleBtn allTasks={allTasks} setTasksList={setTasksList} />
 
-        <SearchForm tasks={tasksList} oldTasks={tasksData} setTasksList={setTasksList} />
+        <SearchForm allTasks={allTasks} setTasksList={setTasksList} />
       </div>
 
       <div className="content">
-        <TasksList tasks={tasksList} setTasksList={setTasksList} />
+        <TasksList tasks={tasksList} setTasksList={setTasksList} allTasks={allTasks} setAllTasks={setAllTasks} />
 
         <aside className="panel">
           <div className="panel-header">
@@ -41,7 +42,7 @@ function App() {
             <span className="panel-meta">Form only UI, no logic</span>
           </div>
 
-          <AddForm tasks={tasksList} setTasksList={setTasksList} />
+          <AddForm allTasks={allTasks} setAllTasks={setAllTasks} setTasksList={setTasksList} />
         </aside>
       </div>
     </div>

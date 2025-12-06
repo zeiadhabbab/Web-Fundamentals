@@ -2,11 +2,12 @@ import { useRef, type Dispatch, type SetStateAction } from "react";
 import type { Task } from "../types";
 
 type AddFormProps = {
-    tasks: Task[],
+    allTasks: Task[],
+    setAllTasks: Dispatch<SetStateAction<Task[]>>,
     setTasksList: Dispatch<SetStateAction<Task[]>>
 }
 
-const AddForm = ({ tasks, setTasksList }: AddFormProps) => {
+const AddForm = ({ allTasks, setAllTasks, setTasksList }: AddFormProps) => {
 
     const inputTitleRef = useRef<HTMLInputElement>(null);
     const inputNotesRef = useRef<HTMLTextAreaElement>(null);
@@ -28,16 +29,19 @@ const AddForm = ({ tasks, setTasksList }: AddFormProps) => {
 
     const handleAddNew = () => {
 
-        const newTask: Task = {};
-        newTask.id = Date.now();
-        newTask.task = inputTitleRef.current?.value || "";
-        newTask.notes = inputNotesRef.current?.value || "";
-        newTask.isCompleted = false;
-        newTask.group = inputCourseRef.current?.value || "";
+        const newTask: Task = {
+            id: Date.now(),
+            task: inputTitleRef.current?.value || "",
+            notes: inputNotesRef.current?.value || "",
+            isCompleted: false,
+            group: inputCourseRef.current?.value || ""
+        };
 
-        setTasksList([...tasks, newTask]);
+        const updatedAllTasks = [...allTasks, newTask];
+        setAllTasks(updatedAllTasks);
+        setTasksList(updatedAllTasks);
         clearForm();
-        console.log(tasks.length);
+        console.log(allTasks.length);
     }
 
 
@@ -59,7 +63,7 @@ const AddForm = ({ tasks, setTasksList }: AddFormProps) => {
             </div>
 
             <div className="form-row">
-                <label className="form-label" for="notes">Notes</label>
+                <label className="form-label" htmlFor="notes">Notes</label>
                 <textarea ref={inputNotesRef} className="form-textarea" id="notes" placeholder="Optional details for the task..."></textarea>
             </div>
 

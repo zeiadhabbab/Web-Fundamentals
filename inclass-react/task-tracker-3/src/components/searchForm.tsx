@@ -1,24 +1,26 @@
+import type { ChangeEvent, Dispatch, SetStateAction } from "react";
+import type { Task } from "../types";
 
 
 type SearchFormProps = {
-    tasks: Task[],
-    oldTasks: Task[],
+    allTasks: Task[],
     setTasksList: Dispatch<SetStateAction<Task[]>>
 }
 
 
 
-const SearchForm = ({ tasks, oldTasks, setTasksList }: SearchFormProps) => {
+const SearchForm = ({ allTasks, setTasksList }: SearchFormProps) => {
     const handleSearchForm = (e: ChangeEvent<HTMLInputElement>) => {
        
        const keyword = e.target.value.toLowerCase();
-       let newTasks = tasks.filter((item) => {
-            return item.task.toLowerCase().includes(keyword);
-        })
-        if(keyword === "") {
-            newTasks = oldTasks;
-        }
-        setTasksList([... newTasks]);
+       if (keyword === "") {
+           setTasksList([...allTasks]);
+       } else {
+           const newTasks = allTasks.filter((item) => {
+                return item.task?.toLowerCase().includes(keyword);
+           });
+           setTasksList([...newTasks]);
+       }
 
 
     }

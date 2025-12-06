@@ -2,18 +2,29 @@ import type { ChangeEvent } from "react";
 import type { TaskItemType } from "../types";
 
 
-const TaskItem = ({task, notes, isCompleted, id, tasks, setTasksList}: TaskItemType) => {
+const TaskItem = ({task, notes, isCompleted, id, tasks, setTasksList, allTasks, setAllTasks}: TaskItemType) => {
 
     const toggleCheck = (e:ChangeEvent<HTMLInputElement> ) => {
         const taskId = e.target.id;
         console.log(taskId);
-        tasks.forEach((item) => {
+        
+        // Update allTasks (source of truth)
+        const updatedAllTasks = allTasks.map((item) => {
             if(item.id === Number(taskId)) {
-                item.isCompleted = e.target.checked
+                return { ...item, isCompleted: e.target.checked };
             }
+            return item;
         });
-
-        setTasksList([...tasks]);
+        setAllTasks(updatedAllTasks);
+        
+        // Update tasksList (displayed tasks)
+        const updatedTasks = tasks.map((item) => {
+            if(item.id === Number(taskId)) {
+                return { ...item, isCompleted: e.target.checked };
+            }
+            return item;
+        });
+        setTasksList(updatedTasks);
     }
 
 
