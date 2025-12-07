@@ -8,8 +8,6 @@ import ToggleBtn from './components/ToggleBtn'
 import { tasksData } from './data'
 import type { Task } from './types'
 
-
-
 function App() {
 
   const [allTasks, setAllTasks] = useState<Task[]>(tasksData);
