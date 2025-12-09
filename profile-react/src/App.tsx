@@ -44,27 +44,27 @@ const App = () => {
    * Runs only once ([]) when component is first displayed.
    */
   useEffect(() => {
+    console.log(">>>>>>> Call First Time Use Effect")
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
     if (saved) {
       try {
         const parsed: GithubUser = JSON.parse(saved);
         setProfileData(parsed);
       } catch (e) {
-        console.error("Error parsing saved user-data");
+        console.log("Error parsing saved user-data");
       }
     }
   }, []);
-
-
 
   /**
    * useEffect #2 — Save profileData to localStorage whenever it changes
    * Good practice: keeps last successful result for future visits.
    */
   useEffect(() => {
-    console.log("Saving user-data to localStorage");
+    
     if (profileData) {
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(profileData));
+      console.log("Saving user-data to localStorage");
     }
   }, [profileData]);
 
@@ -106,15 +106,20 @@ const App = () => {
    * - Fetch GitHub user data
    */
   function handleSubmit(e: FormEvent<HTMLFormElement>): void {
-    e.preventDefault();
+    e.preventDefault(); // we use this to prevent reload the page
     if (username.trim()) {
       fetchUserData(username.trim());
     }
   }
 
+  function handleChange(e: ChangeEvent<HTMLInputElement>){
+    console.log(e.target.value)
+     setUsername(e.target.value)
+  }
+
   return (
     <main className="container">
-      <h1>🔍 GitHub Profile Viewer for :{username}</h1>
+      <h1>🔍 GitHub Profile Viewer :{username}</h1>
 
       {/* Controlled Component Form:
           Input value always comes from React state */}
@@ -125,9 +130,7 @@ const App = () => {
           name="username"
           placeholder="Enter GitHub username..."
           value={username}
-          onChange={(e: ChangeEvent<HTMLInputElement>) =>
-            setUsername(e.target.value)
-          }
+          onChange={handleChange}
           required
         />
 
