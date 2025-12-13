@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            border: 1px solid black;
+            height: 400px;
+            align-items: flex-start;
+        }
+
+        .block {
+            min-width: 100px;
+            min-height: 100px;
+            background-color: red;
+
+        }
+
+        .red {
+            background-color: red;
+            order: 5;
+            align-self: flex-end;
+        }
+
+        .green {
+            background-color: green;
+            order: 2;
+            align-self: stretch;
+        }
+
+        .yellow {
+            background-color: yellow;
+            order: 3;
+            align-self: center;
+
+        }
+
+        .blue {
+            background-color: blue;
+            order: 4;
+        }
+
+        #table *{
+            border: 1px solid black;
+            padding: 0;
+            margin: 0;;
+        }
+
+        .two-columns{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block yellow">
+            block 3
+        </div>
+        <div class="block red">
+            block 1
+        </div>
+        <div class="block blue">
+            block 2
+        </div>
+
+        <div class="block green">
+            block 4
+        </div>
+    </div>
+
+    <br>
+
+    <div class='two-columns' id="table">
+        <div class='column'>
+            <h2>Meats</h2>
+            <div>Turkey</div>
+            <div>Beef</div>
+        </div>
+        <div class='column'>
+            <h2>Cheeses</h2>
+            <div>Cheddar</div>
+            <div>Swiss</div>
+            <div>American</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

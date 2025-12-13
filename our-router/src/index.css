@@ -1,0 +1,36 @@
+body{
+    padding:0;
+    margin: 0;
+}
+
+header{
+    border: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ac8989;
+}
+
+button{
+    border: 1px solid #000000;
+    background-color: transparent;
+    font-size: 28px;
+    padding:  10px 20px;
+}
+
+
+
+
+footer{
+    border: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: #ccc;;
+}
