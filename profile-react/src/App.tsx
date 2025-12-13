@@ -46,14 +46,22 @@ const App = () => {
   useEffect(() => {
     console.log(">>>>>>> Call First Time Use Effect")
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+    let parsed: GithubUser;
     if (saved) {
       try {
-        const parsed: GithubUser = JSON.parse(saved);
+        parsed = JSON.parse(saved);
         setProfileData(parsed);
       } catch (e) {
         console.log("Error parsing saved user-data");
       }
     }
+
+  setTimeout(()=>{
+    debugger;
+    parsed.name = parsed.name + "??????";
+    setProfileData({...parsed});
+  },10000)
+
   }, []);
 
   /**
