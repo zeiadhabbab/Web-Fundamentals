@@ -1,18 +1,22 @@
+import { NavLink, useNavigate } from "react-router";
+import { isAuth, logout } from "../auth";
 
-interface HeaderProps  {
-    handleRoutChange: (page: string) => void;
-}
+function Header(){
 
-
-function Header({handleRoutChange}: HeaderProps){
-
-    
+    const navigate = useNavigate();
 
     return (
         <header className="header">
-            <button onClick={()=>{handleRoutChange('home')}}>Home</button>
-            <button onClick={()=>{handleRoutChange('login')}}>Login</button>
-            <button onClick={()=>{handleRoutChange('forget')}}>Forget</button>
+            <NavLink className='button' to="/">Home</NavLink>
+            <NavLink className='button' to="/forget">Forget</NavLink>
+            {!isAuth() && <NavLink className='button' to="/login">Login</NavLink>}
+            
+            {isAuth() &&<button className="button" onClick={()=>{
+                logout();
+                navigate("/login", {replace:true})
+
+            }}>Logout</button>}
+
         </header>
     )
 }
