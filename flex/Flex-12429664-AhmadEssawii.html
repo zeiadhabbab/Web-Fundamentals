@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://static.vecteezy.com/system/resources/previews/011/995/200/non_2x/geometric-icon-logo-geometric-abstract-element-free-vector.jpg"
+    />
+
+    <title>Simple Product Page with Menu, About Section and Footer Links</title>
+    <style>
+      body {
+        background-color: rgba(17, 5, 5, 0.466);
+        margin: 0px;
+        padding: 0px;
+      }
+      .header {
+        background: #222;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+      }
+      .Links {
+        background: #444;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+      }
+      .Links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .Links a:hover {
+        background: #666;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #7f7f7f;
+        width: 100%;
+        align-self: stretch;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .price {
+        color: green;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      button {
+        background: #222;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #555;
+      }
+
+      footer {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 15px;
+        align-items: center;
+      }
+      footer nav {
+        background: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 10px;
+      }
+      footer nav a {
+        color: #fcfcfc;
+        text-decoration: none;
+        width: 500;
+      }
+
+      footer nav a:hover {
+        background: #666;
+        border-radius: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Simple Flexee Product Page By</h1>
+    </header>
+
+    <nav class="Links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section class="box">
+        <img src="https://placehold.co/400x300" alt="Sample Product" />
+      </section>
+
+      <section class="product-info box">
+        <h2>Minimal Chair</h2>
+        <p>Comfortable, modern, and lightweight chair perfect for any space.</p>
+        <p class="price">$79.99</p>
+        <button>Add to Cart</button>
+      </section>
+    </main>
+
+    <main>
+      <section class="about box" id="about">
+        <h2>About Flex Store</h2>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+        <p>
+          Flex Store is your go-to destination for modern and minimalist
+          furniture. We combine comfort, design, and affordability to create
+          pieces that fit every home and lifestyle. Our mission is to make
+          high-quality furniture accessible to everyone.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+      </nav>
+      <p style="text-align: center; margin: 0px">&copy; 2025 Flex Store</p>
+    </footer>
+  </body>
+</html>

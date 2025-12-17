@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /*flex-direction: row-reverse;*/
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1250px;
+            margin: 0 auto;
+            border: 1px solid black;
+            align-items: anchor-center;
+            height: 400px;
+
+        }
+
+        .container div {
+            border: 1px solid #fff;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .bgred {
+            background-color: red;
+            order: 5;
+            height: auto !important;
+
+        }
+
+        .bgblue {
+            background-color: blue;
+            order: 3;
+
+        }
+
+        .bgyellow {
+            background-color: yellow;
+            color: black !important;
+            order: 2;
+
+        }
+
+        .bkgreen {
+            background-color: green;
+            order: 1;
+        }
+
+         .two-columns {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bgblue">block 2</div>
+        <div class="bgred">block 1</div>
+
+        <div class="bgyellow">block 3<br><br></div>
+        <div class="bkgreen">block 4<br><br><br></div>
+    </div>
+
+    <div class='two-columns'>
+        <div class='column'>
+            <h2>Meats</h2>
+            <div>Turkey</div>
+            <div>Beef</div>
+        </div>
+        <div class='column'>
+            <h2>Cheeses</h2>
+            <div>Cheddar</div>
+            <div>Swiss</div>
+            <div>American</div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>

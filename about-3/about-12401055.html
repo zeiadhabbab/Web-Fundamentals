@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Send me a message</title>
+</head>
+<body>
+    <h1>Send me a message</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label>Your name<br>
+                <input type="text" name="name" placeholder="Your name">
+            </label>
+        </p>
+
+        <p>
+            <label>Your email<br>
+                <input type="email" name="email" placeholder="you@example.com">
+            </label>
+        </p>
+
+        <p>
+            <label>Topic<br>
+                <select name="topic">
+                    <option value="general">General</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </p>
+
+        <p>Gender<br>
+            <label><input type="radio" name="gender" value="male" checked> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </p>
+
+        <p>
+            <label>Message<br>
+                <textarea name="message" rows="6" cols="40" placeholder="Write your message..."></textarea>
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+</body>
+</html>
