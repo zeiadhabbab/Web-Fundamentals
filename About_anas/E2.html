@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send me a message</title>
+</head>
+<body>
+    <h1>Send me a message !</h1>
+    <form action="/" method="post">
+        <div>
+            <label for="username">Your name : </label>
+            <input type="text" id="username" name="username" >
+        </div>
+
+        <div>
+            <label for="Email">Your email :</label>
+            <input type="email" id="Email" name="Email" >
+        </div>
+<div>
+
+    <label for="topic">Your topic : </label>
+    <select name="topic" id="topic">
+        <option value="">choose topic</option>
+        <option value="appointment">Appointment</option>
+        <option value="consultation">Consultation</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+        </select>
+</div>
+       <div>
+        <label for="">Your gender : </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+       </div>
+
+        <div>
+            <label for="message">Your message :</label>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
